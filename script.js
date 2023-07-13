@@ -5,4 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const eliminarInput = document.getElementById('eliminar');
 
     let contadorInputs = 0;
+
+    function crearInput() {
+        const input = document.createElement('input'); 
+        input.type = 'text'; 
+        input.name = `input${contadorInputs}`;
+        input.placeholder = 'Ingrese un dato'; 
+    }
 });
