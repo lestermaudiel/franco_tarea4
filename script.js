@@ -11,5 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         input.type = 'text'; 
         input.name = `input${contadorInputs}`;
         input.placeholder = 'Ingrese un dato'; 
+  
+        contenedorInputs.appendChild(input); 
+  
+        contadorInputs++; 
     }
 });
