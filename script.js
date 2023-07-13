@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contadorInputs++; 
     }
 
-});
+
 agregarInput.addEventListener('click', () => {
     crearInput();
 });
@@ -55,4 +55,5 @@ if (esValido) {
 } else {
     alert('Agregue un Input primero y Luego verifique que todos los campos esten llenos.'); 
 }
+});
 });
