@@ -21,3 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 agregarInput.addEventListener('click', () => {
     crearInput();
 });
+
+eliminarInput.addEventListener('click', () => {
+    if (contadorInputs > 0) {
+        contenedorInputs.removeChild(contenedorInputs.lastChild); // Eliminar el último input del contenedor
+        
+        contadorInputs--; 
+    }
+});
