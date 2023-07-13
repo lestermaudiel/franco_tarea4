@@ -48,4 +48,11 @@ formulario.addEventListener('submit', (event) => {
                 input.style.border = '';
             }
 });
+if (esValido) {
+    
+    alert('ENVIO EXITOSO');
+    formulario.reset(); 
+} else {
+    alert('Agregue un Input primero y Luego verifique que todos los campos esten llenos.'); 
+}
 });
