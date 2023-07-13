@@ -3,4 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedorInputs = document.getElementById('inputText'); 
     const agregarInput = document.getElementById('agregar'); 
     const eliminarInput = document.getElementById('eliminar');
+
+    let contadorInputs = 0;
 });
