@@ -34,4 +34,8 @@ formulario.addEventListener('submit', (event) => {
     event.preventDefault(); 
 
     let esValido = true; 
+
+    if (contadorInputs === 0) {
+        esValido = false; 
+    }
 });
