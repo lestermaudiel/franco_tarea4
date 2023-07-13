@@ -24,8 +24,14 @@ agregarInput.addEventListener('click', () => {
 
 eliminarInput.addEventListener('click', () => {
     if (contadorInputs > 0) {
-        contenedorInputs.removeChild(contenedorInputs.lastChild); // Eliminar el último input del contenedor
+        contenedorInputs.removeChild(contenedorInputs.lastChild); 
         
         contadorInputs--; 
     }
+});
+
+formulario.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+
+    let esValido = true; 
 });
