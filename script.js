@@ -16,4 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
         contadorInputs++; 
     }
+
+});
+agregarInput.addEventListener('click', () => {
+    crearInput();
 });
