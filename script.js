@@ -38,4 +38,14 @@ formulario.addEventListener('submit', (event) => {
     if (contadorInputs === 0) {
         esValido = false; 
     }
+
+    const inputs = Array.from(contenedorInputs.getElementsByTagName('input')); 
+        inputs.forEach((input) => {
+            if (input.value.trim() === '') {
+                esValido = false; 
+                input.style.border = '4px solid red'; 
+            } else {
+                input.style.border = '';
+            }
+});
 });
